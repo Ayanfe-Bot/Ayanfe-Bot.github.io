@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'arcade';
+    src: url(fonts/ARCADECLASSIC.TTF);
+    font-weight: 100;
+    font-style: Regular;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.35s linear;
+}
+
+body {
+   background-color: black;
+   padding: 0;
+   margin: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   scroll-behavior: none;
+}
+header {
+    position: absolute;
+    background-color: black;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1.875rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.563rem;
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
+    font-family: Poppins, sans-serif;
+
+}
+
+.logo:hover{
+   pointer-events: none;
+   border: none;
+   box-shadow: none;
+   background: transparent;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 1.25rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+
+}
+
+header ul li a {
+     text-decoration: none;
+     padding: 0.375rem 0.938rem;
+     color: #fff;
+     border-radius: 1.25rem;
+     font-family: Poppins, sans-serif;
+     font-size: 1.1rem;
+     text-transform: none;
+     position: sticky;
+
+
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+    position: sticky;
+    border: none;
+    box-shadow: none;
+    transition-delay: 0s;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+ 
+   
+
+}
+
+.collage {
+    background: url(./Images/1.gif);
+    background-size: 100%;
+    position: absolute;
+    width: 55%;
+    height: 61%;
+    max-width: 55%;
+    background-repeat: no-repeat;
+    top: 17%;
+    left: 23%;
+
+ 
+   
+
+
+}
+
+.player {
+    width: 55%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    color: white;
+    grid-gap: 16px;
+    position: absolute;
+    border-radius: 50px;
+    top: 80%;
+    left: 22%;
+
+   
+    
+   
+}    
+
+.start {
+    position: absolute;
+    width: 55%;
+    top: 87%;
+    left: 41%;
+    
+}
+.control, #current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+}
+
+#playbtn {
+    font-size: 1.5rem;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.313rem;
+    white-space: nowrap;
+    
+
+    
+
+}
+
+#current {
+    text-align: right;
+}
+
+.bar {
+    --space:  -4px;
+    background-color: #24242424;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+#progress {
+    display: block;
+    width: var(--progress, 0%);
+    background-color: white;
+    transition: all 1s linear;
+    height: 100%;
+}
+
+a {
+    z-index: 10000;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #d4337e;
+    font-family: arcade;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 60px;
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+    top: -10px;
+
+  
+
+}
+a:hover {
+    color: #ffffff;
+   
+}
+

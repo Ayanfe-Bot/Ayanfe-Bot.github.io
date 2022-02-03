@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'arcade';
+    src: url(fonts/ARCADECLASSIC.TTF);
+    font-weight: 100;
+    font-style: Regular;
+}
+
+body {
+ background-color:black;
+ margin: 0px;
+}
+
+@font-face {
+    font-family: 'arcade';
+    src: url(fonts/ARCADECLASSIC.TTF);
+    font-weight: 100;
+    font-style: Regular;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+
+
+}
+
+body {
+   background-color: black;
+   padding: 0;
+   margin: 0;
+   height: 100%;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+
+}
+header {
+      position: absolute;
+    background-color: black;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1.875rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.563rem;
+    text-transform: uppercase;
+    letter-spacing: 0.313rem;
+    font-family: Poppins, sans-serif;
+
+}
+
+.logo:hover{
+   pointer-events: none;
+   border: none;
+   box-shadow: none;
+   background: transparent;
+   color: #fff;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 1.25rem;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+
+}
+
+header ul li a {
+     text-decoration: none;
+     padding: 0.375rem 0.938rem;
+     color: #fff;
+     border-radius: 1.25rem;
+     font-family: Poppins, sans-serif;
+     font-size: 1.1rem;
+     text-transform: none;
+     position: sticky;
+
+
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+    position: sticky;
+    border: none;
+    box-shadow: none;
+    transition-delay: 0s;
+}
+
+.container {
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+
+    
+}
+
+.image-container {
+    height: 90%;
+    
+    position: absolute;
+    bottom: -0.3%;
+    right:53%;
+
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.transition-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.transition-image:hover {
+     opacity: 1;
+
+}
+
+
+.gif {
+    background: url(./Images/3.gif);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 115%;
+    width: 115%;
+   margin-left: 105%;
+    margin-top: -145%;
+
+}
+
+.Continue {
+    position: absolute;
+    margin-top: 112%;
+    margin-left: 0%;
+    font-family: arcade;
+    animation-name: fadeIn ;
+    animation-duration: 5s;
+    animation-delay: 17s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+     bottom: 16%;
+    right:1%;
+
+
+}
+
+
+
+a {
+    z-index: 10000;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-family: arcade;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+
+ 
+
+}
+
+a:hover {
+   color: #c967b6;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    a{
+        font-size: 21px;
+    }
+
+@media only screen and (max-width: 1200px) {
+    a{
+        font-size: 17px;
+    }
+
+@media only screen and (max-width: 1000px) {
+    a{
+        font-size: 13px;
+    }
