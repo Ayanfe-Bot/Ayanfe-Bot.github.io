@@ -236,3 +236,36 @@ a:hover {
    
 }
 
+.error {
+ display: none;
+}
+
+@media (orientation: portrait) {
+
+ 
+.container {
+    display: none;
+}
+
+    .error {
+   display: flex;
+   position: absolute;
+   color: white;
+   font-family: Poppins, sans-serif;
+   font-style: italic;
+   text-transform: uppercase;
+   font-size: 3rem;
+ width: 50%;
+   text-align: center;
+   justify-content: center;
+   margin-top: -30%;
+   left: 15%;
+
+}
+
+header {
+    display: none;
+}
+
+}
+
